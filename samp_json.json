@@ -1,0 +1,31 @@
+// {
+//   "considerIp": "false",
+//   "wifiAccessPoints": [
+//     // {
+//     //     "macAddress": "a0:8c:fd:21:14:a0",my laptop
+//     //     "signalStrength": -43,
+//     //     "signalToNoiseRatio": 0
+//     // },
+//     {
+//         "macAddress": "00:DB:DF:C1:DD:4C",my router
+//         "signalStrength": -55,
+//         "signalToNoiseRatio": 0
+//     }
+//   ]
+// }
+
+{
+  "considerIp": "false",
+  "wifiAccessPoints": [
+    {
+        "macAddress": "00:25:9c:cf:1c:ac",
+        "signalStrength": -43,
+        "signalToNoiseRatio": 0
+    },
+    {
+        "macAddress": "00:25:9c:cf:1c:ad",
+        "signalStrength": -55,
+        "signalToNoiseRatio": 0
+    }
+  ]
+}

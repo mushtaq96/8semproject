@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cardiac-monitor application</title>
+ 
+    
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    <link href="../static/signup.css" rel="stylesheet">
+
+<!--<script type="text/javascript" src="../static/js/jquery-3.3.1.min"></script> 
+ -->    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(function() {
+        $('#btnSignUp').click(function() {
+ 
+            $.ajax({
+              url: '/signUp',
+              data: $('form').serialize(),
+              type: 'POST',
+              success: function(response) {
+                  console.log(response);
+              },
+              error: function(error) {
+                console.log(error);
+              }
+            });
+        });
+    }); 
+    </script>
+    
+  </head>
+ 
+  <body background="../static/css/images/background.jpg">>
+ 
+    <div class="container">
+      <div class="header">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" ><a href="/">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li role="presentation"><a href="/showSignin">Sign In</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li role="presentation" class="active"><a href="#">Sign Up</a></li>
+          </ul>
+        </nav>
+        <!-- <h3 class="text-muted">Python Flask App</h3> -->
+      </div>
+ 
+      <div class="jumbotron">
+        <h1>Cardiac Health Monitoring</h1>
+
+        <form class="form-signin">
+        <label for="inputName" class="sr-only">Name</label>
+        <input type="name" name="inputName" id="inputName" class="form-control" placeholder="Name" required autofocus>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" name="inputEmail" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="Password" required>
+        <br>
+        <br>
+        <label for="inputGuardian" class="sr-only">Guardian name</label>
+        <input type="name" name="inputGuardian" id="inputGuardian" class="form-control" placeholder="Guardian's name"> 
+        <label for="inputGuardianno" class="sr-only">Guardian no</label>
+        <input type="number" name="inputGuardianno" id="inputGuardianno" class="form-control" placeholder="Guardian's number">
+        <br>
+        <br>
+        <label for="doctorname" class="sr-only">Doctor name</label>
+        <input type="name" name="doctorname" id="doctorname" class="form-control" placeholder="Doctor name">
+        <label for="doctorno" class="sr-only">Doctor no</label>
+        <input type="number" name="doctorno" id="doctorno" class="form-control" placeholder="Doctor's number">
+        <br>
+
+        <button id="btnSignUp" class="btn btn-lg btn-primary btn-block" type="button">Sign up</button>
+
+
+
+      </form>
+      </div>
+ 
+      
+      <footer class="footer">
+          <p>&copy; 8th Sem 2018</p>
+      </footer> 
+ 
+      
+    </div>
+  </body>
+</html>
