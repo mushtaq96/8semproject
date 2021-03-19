@@ -27,7 +27,7 @@ idna==2.6
 imagesize==1.0.0
 ipaddress==1.0.17
 itsdangerous==0.24
-Jinja2==2.10
+Jinja2==2.11.3
 keyring==10.4.0
 keyrings.alt==2.2
 MarkupSafe==1.0
