@@ -38,7 +38,7 @@ networkx==2.1
 numpy==1.12.1
 numpydoc==0.8.0
 olefile==0.44
-opencv-python==3.4.0.12
+opencv-python==3.4.7.28
 openmdao==2.2.1
 ordereddict==1.1
 packaging==17.1
