@@ -6,7 +6,7 @@ Babel==2.5.3
 backports-abc==0.5
 backports.functools-lru-cache==1.4
 baron==0.6.6
-certifi==2018.1.18
+certifi==2022.12.7
 chardet==3.0.4
 click==6.7
 configparser==3.5.0
